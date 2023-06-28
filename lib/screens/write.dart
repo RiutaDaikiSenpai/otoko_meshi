@@ -7,13 +7,18 @@ class WriteScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: const Color(0xFFd3d3d3),
+        backgroundColor: Colors.white,
+        bottomOpacity: 0.0,
+        elevation: 0.0,
         title: const Text(
-          '記す',
-          style: TextStyle(color: Colors.black),
+          'あなたの料理を書き残す',
+          style: TextStyle(color: Colors.black, fontSize: 30),
         ),
       ),
-      body: const Center(child: Text('記す', style: TextStyle(fontSize: 32.0))),
+      body: Container(
+          color: Colors.white,
+          child: const Center(
+              child: Text('記す', style: TextStyle(fontSize: 32.0)))),
     );
   }
 }

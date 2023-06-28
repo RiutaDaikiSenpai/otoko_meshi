@@ -37,11 +37,7 @@ class MyHomePage extends StatefulWidget {
 class _MyHomePageState extends State<MyHomePage> {
   int _selectedIndex = 0;
 
-  static const _screens = [
-    SearchScreen(),
-    WriteScreen(),
-    SettingsScreen()
-  ];
+  static const _screens = [SearchScreen(), WriteScreen(), SettingsScreen()];
 
   void _onItemTapped(int index) {
     setState(() {
@@ -54,9 +50,10 @@ class _MyHomePageState extends State<MyHomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: _screens[_selectedIndex],
-
       bottomNavigationBar: BottomNavigationBar(
-        backgroundColor: const Color(0xFFd3d3d3),
+        // backgroundColor: const Color(0xFFd3d3d3),
+        elevation: 0.0,
+        backgroundColor: Colors.white,
         selectedIconTheme: const IconThemeData(size: 35),
         unselectedIconTheme: const IconThemeData(size: 25),
         selectedLabelStyle: const TextStyle(fontWeight: FontWeight.bold),
