@@ -1,7 +1,7 @@
 # otoko_meshi
 
-A new Flutter project.
-
+一人暮らしの方向けの簡単料理レシピアプリ。
+自分用のメモに留めるもヨシ、メモすると同時に投稿するもヨシ。
 ## Getting Started
 
 This project is a starting point for a Flutter application.
