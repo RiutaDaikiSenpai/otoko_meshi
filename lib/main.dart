@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:otoko_meshi/screens/search.dart';
+import 'package:otoko_meshi/screens/settings.dart';
+import 'package:otoko_meshi/screens/write.dart';
 
 void main() {
   // runApp(const SearchRecipe());
@@ -32,24 +35,26 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-  int currentIndex = 0;
+  int _selectedIndex = 0;
+
+  static const _screens = [
+    SearchScreen(),
+    WriteScreen(),
+    SettingsScreen()
+  ];
+
+  void _onItemTapped(int index) {
+    setState(() {
+      _selectedIndex = index;
+      print(index);
+    });
+  }
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        backgroundColor: const Color(0xFFd3d3d3),
-        title: Text(
-          widget.title,
-          style: const TextStyle(color: Colors.black, fontSize: 32),
-        ),
-      ),
-      body: const Center(
-        child: Text(
-          'Home',
-          style: TextStyle(fontSize: 60),
-        ),
-      ),
+      body: _screens[_selectedIndex],
+
       bottomNavigationBar: BottomNavigationBar(
         backgroundColor: const Color(0xFFd3d3d3),
         selectedIconTheme: const IconThemeData(size: 35),
@@ -59,8 +64,8 @@ class _MyHomePageState extends State<MyHomePage> {
         unselectedFontSize: 18,
         selectedItemColor: Colors.black,
         type: BottomNavigationBarType.fixed,
-        currentIndex: currentIndex,
-        onTap: (index) => setState(() => currentIndex = index),
+        currentIndex: _selectedIndex,
+        onTap: _onItemTapped,
         items: const [
           BottomNavigationBarItem(
             icon: Icon(
