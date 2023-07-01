@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:otoko_meshi/steak_icons.dart';
 
 class SearchScreen extends StatelessWidget {
   const SearchScreen({Key? key}) : super(key: key);
@@ -75,7 +76,7 @@ class SearchScreen extends StatelessWidget {
                             ),
                             const SizedBox(
                               child: Text(
-                                '米',
+                                'こめめめ',
                                 style: TextStyle(
                                     fontSize: 20, color: Colors.black),
                               ),
@@ -212,6 +213,13 @@ class SearchScreen extends StatelessWidget {
                 ],
               ),
               Row(
+                children: const [
+                  SizedBox(
+                    height: 20,
+                  ),
+                ],
+              ),
+              Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   SizedBox(
@@ -256,8 +264,9 @@ class SearchScreen extends StatelessWidget {
                               child: Column(
                                 mainAxisAlignment: MainAxisAlignment.end,
                                 children: const [
+                                  // Icon(Steak.meat)
                                   Icon(
-                                    Icons.rice_bowl,
+                                    Icons.kebab_dining,
                                     size: 50,
                                     color: Colors.black,
                                   )
@@ -320,8 +329,8 @@ class SearchScreen extends StatelessWidget {
                                 mainAxisAlignment: MainAxisAlignment.end,
                                 children: const [
                                   Icon(
-                                    Icons.bakery_dining,
-                                    size: 60,
+                                    Icons.set_meal,
+                                    size: 50,
                                     color: Colors.black,
                                   )
                                 ],
@@ -383,7 +392,7 @@ class SearchScreen extends StatelessWidget {
                                 mainAxisAlignment: MainAxisAlignment.end,
                                 children: const [
                                   Icon(
-                                    Icons.ramen_dining,
+                                    Icons.grass,
                                     size: 50,
                                     color: Colors.black,
                                   )
@@ -399,6 +408,13 @@ class SearchScreen extends StatelessWidget {
                             )
                           ],
                         )),
+                  ),
+                ],
+              ),
+              Row(
+                children: const [
+                  SizedBox(
+                    height: 20,
                   ),
                 ],
               ),
@@ -448,7 +464,7 @@ class SearchScreen extends StatelessWidget {
                                 mainAxisAlignment: MainAxisAlignment.end,
                                 children: const [
                                   Icon(
-                                    Icons.rice_bowl,
+                                    Icons.soup_kitchen,
                                     size: 50,
                                     color: Colors.black,
                                   )
@@ -511,8 +527,8 @@ class SearchScreen extends StatelessWidget {
                                 mainAxisAlignment: MainAxisAlignment.end,
                                 children: const [
                                   Icon(
-                                    Icons.bakery_dining,
-                                    size: 60,
+                                    Icons.local_pizza,
+                                    size: 50,
                                     color: Colors.black,
                                   )
                                 ],
@@ -574,7 +590,7 @@ class SearchScreen extends StatelessWidget {
                                 mainAxisAlignment: MainAxisAlignment.end,
                                 children: const [
                                   Icon(
-                                    Icons.ramen_dining,
+                                    Icons.cake,
                                     size: 50,
                                     color: Colors.black,
                                   )
@@ -590,6 +606,13 @@ class SearchScreen extends StatelessWidget {
                             )
                           ],
                         )),
+                  ),
+                ],
+              ),
+              Row(
+                children: const [
+                  SizedBox(
+                    height: 20,
                   ),
                 ],
               ),
@@ -636,7 +659,7 @@ class SearchScreen extends StatelessWidget {
                             mainAxisAlignment: MainAxisAlignment.end,
                             children: const [
                               Icon(
-                                Icons.rice_bowl,
+                                Icons.question_mark,
                                 size: 50,
                                 color: Colors.black,
                               )
